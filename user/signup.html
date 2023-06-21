@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <section>
+        <h1>회원가입</h1>
+        <form action="signup">
+            <legend>회원가입정보</legend>
+            <fieldset>
+                <div>
+                    <label for ="uid">아이디</label>  <!-- 이렇게 잘 안씀. 우선 이렇게 둔 것-->
+                    <input name="uid">
+                    <output>유효한 아이디입니다.</output>
+                </div>
+
+                <div>
+                    <label>이메일</label>
+                    <input name="email">
+                    <output>유효한 이메일 형식이 아닙니다.</output>
+                </div>
+
+                <div>
+                    <label>비밀번호</label>
+                    <input name="pwd">
+                    <output>안전한 비밀번호가 아닙니다.</output>
+                </div>
+
+                <div>
+                    <label>비밀번호확인</label>
+                    <input>
+                    <output>비밀번호가 일치하지 않습니다.</output>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>가장 좋아하는 취미</legend>
+                <input type ="radio" id ="r" name = "hb">
+                <label for ="r">독서</label>
+
+                <input type ="radio" name = "hb">
+                <label for = "cm">등산</label>
+
+                <input type ="radio" name = "fb">
+                <label for = "fb">축구시청</label>
+                
+            </fieldset>
+
+            <div>
+                <input type="submit" value="회원가입">
+            </div>
+
+        </form>
+    </section>
+</body>
+
+</html>
